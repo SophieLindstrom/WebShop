@@ -265,7 +265,7 @@ namespace Shoeshop
                 Console.Write("Ange ny produktinfo: ");
                 var productInfo = Console.ReadLine();
 
-                var result = database.Products.Single(b => b.ProductCategoryId == productNumber);
+                var result = database.Products.Single(b => b.Id == productNumber);
                 if (result != null)
                 {
 
